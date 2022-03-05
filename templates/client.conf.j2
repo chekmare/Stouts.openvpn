@@ -15,9 +15,9 @@ dev {{ openvpn_dev }}
 # server.
 proto {{ openvpn_proto }}
 
-{% if openvpn_ncp_ciphers | length %}
-ncp-ciphers {{ openvpn_ncp_ciphers }}
-{% endif %}
+#{% if openvpn_ncp_ciphers | length %}
+#ncp-ciphers {{ openvpn_ncp_ciphers }}
+#{% endif %}
 
 # The hostname/IP and port of the server. You can have multiple remote entries
 # to load balance between the servers.
