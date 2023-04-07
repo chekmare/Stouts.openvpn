@@ -32,6 +32,10 @@ openvpn_keydir: "{{ openvpn_etcdir }}/keys"
 # }}}
 # Server configuration {{{
 # Default settings (See OpenVPN documentation)
+#
+
+openvpn_crl_pem_file: "{{ openvpn_etcdir }}/crl.pem"
+
 openvpn_host: "{{ inventory_hostname }}"
 
 openvpn_port: '1194'

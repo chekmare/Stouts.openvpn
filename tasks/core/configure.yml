@@ -9,7 +9,7 @@
 
 - name: Check if crl.pem exists
   stat:
-    path: "{{ openvpn_keydir }}/crl.pem"
+    path: "{{ openvpn_crl_pem_file }}"
   register: crl_pem_file
 
 - name: Configure server
