@@ -18,8 +18,6 @@
     sed -n
     '/-----BEGIN CERTIFICATE-----/,/-----END CERTIFICATE-----/p'
     {{ openvpn_keydir }}/issued/{{ _openvpn__client }}.crt
-  args:
-    warn: false
   no_log: true
   changed_when: false
   register: openvpn_read_client_cert_files_results
